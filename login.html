@@ -1,0 +1,13 @@
+<p>This is the login page.</p>
+<form name="loginForm" ng-controller="LoginController as ctrl" ng-submit="ctrl.login(username, password)" novalidate>
+	<p ng-if="badLogin">Sorry, the information that you have entered does not match our records</p>
+	<div>
+		<p ng-if="omittedUsername && loginForm.username.$error.required">Please enter a username</p>
+		<input ng-change="omittedUsername=false; badLogin=false" type="text" name="username" ng-model="username" required/>
+	</div>
+	<div>
+		<p ng-if="omittedPassword && loginForm.password.$error.required">Please enter a password</p>
+		<input ng-change="omittedPassword=false; badLogin=false" type="password" name="password" ng-model="password" required>
+	</div>
+	<input type="submit" value="Log In">
+</form>

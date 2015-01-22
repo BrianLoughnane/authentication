@@ -1,0 +1,8 @@
+<div ng-repeat="repo in repos" class="entry">
+	<div>{{ repo.name }}</div>
+	<div>{{ repo.archive_url }}</div>
+	<div>{{ repo.git_tags_url }}</div>
+	<div>By:</div>
+	<div>{{ repo.owner.login }}</div>
+	<div>{{ repo.owner.url }}</div>
+</div>

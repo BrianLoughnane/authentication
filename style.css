@@ -1,0 +1,14 @@
+.entry {
+	box-shadow: 0px 0px 3px teal;
+	margin: 10px;
+	padding: 10px;
+}
+
+.link {
+	color: teal;
+}
+
+.link:hover {
+	cursor: pointer;
+	color: maroon;
+}

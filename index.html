@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<link rel="stylesheet" href="./style.css">
+
+	<meta charset="UTF-8">
+	<title>Authentication</title>
+
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+	<header ng-controller="HeaderCtrl">
+		<a ng-click="logOut()" ng-if="loggedIn" class="link">Logout</a>
+		<a ng-click="logIn()"  ng-if="!loggedIn" class="link">Log In</a>
+	</header>
+	<ng-view></ng-view>
+</body>
+</html>
